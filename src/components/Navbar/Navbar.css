@@ -1,0 +1,129 @@
+.Nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+    height: 18px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5;
+    justify-content: space-between;
+    box-shadow :0 10px 30px -10px rgba(10, 25, 47, 0.85);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.Nav h1{
+    font-weight: 200;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.Nav ul{
+    display: flex;
+    margin-right: 40px;
+    transition: all 0.3s ease;
+}
+.Nav li{
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: bolder;
+        transition: all 0.3s ease;
+}
+.Nav li a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.Nav #hidden{
+    transition: all 0.3s ease;
+    display: flex;
+}
+.nav-change{
+    /* background-color: black; */
+    color: white;
+}
+.Nav li a:hover{
+    cursor: pointer;
+    /* background: white; */
+    color: black;
+    border-bottom: 2px solid white;
+    border-radius: 12px;
+    padding: 5px 8px;
+}
+.Nav button{
+    transition: all 0.3s ease;
+    display: none;
+    background: none;
+}
+
+.active_class{
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5px 13px;
+    color: white;
+}
+
+
+
+@media only screen and (max-width:680px)
+{
+    .Nav ul{
+        width: 29%;
+        margin: auto;
+        position: absolute;
+    }
+    
+    .Nav ul li{
+        padding-top: 32px;
+        text-decoration: none;
+        display: none;
+    }
+    .Nav h1{
+        margin: auto;
+    }
+    .Nav button{
+        transition: all 0.3s ease;
+        display: flex;
+        width: 1.5cm;
+        padding: 9px;
+        margin-top: 39px;
+        height: 40px;
+        position: fixed;
+        left: 0%;
+    }
+    .Nav #hidden{
+        width: 100%;
+        transition: all 0.3s ease;
+        position: fixed;
+        height: 358px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -20px;
+        background-color: rgb(82, 70, 70);
+    }
+    .Nav #hidden li{
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        margin: -1px;
+    }
+    .Nav #hidden li a{
+        color:white;
+    }
+}
+

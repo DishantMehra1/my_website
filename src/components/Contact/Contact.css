@@ -1,0 +1,85 @@
+.contact{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    background-color: rgb(19, 34, 128);
+}
+
+.contact p{
+    padding-top: 10px ;
+    padding-bottom: 47px;
+    text-align: center;
+}
+.contact h2{
+    margin-top: 100px;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+/* .btn{
+    display: block;
+    margin: auto;
+} */
+button:hover{
+    cursor: pointer;
+    background:none;
+    /* color: black; */
+}
+
+.btn_2{
+    width: 5.5cm;
+    font-size: 20px;
+    background: crimson;
+    height: 35px;
+    border: 2px solid crimson;
+    text-align: center;
+    border-radius: 6px;
+    display: block;
+    margin: auto;
+    padding-top: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.btn_2:hover{
+    background: none;
+}
+.btn_2 a{
+    background: none;
+    text-decoration: none;
+}
+
+footer{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.connect{
+    display: block;
+    width: 10%;
+}
+.connect ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact  ul a{
+    text-decoration: none;
+    padding: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.connect img{
+    height: 50px;
+    width: 50px;
+    border-radius: 31px;
+}
+.connect img:hover{
+    background: white;
+    transition: all 0.3s ease;
+}

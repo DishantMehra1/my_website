@@ -1,0 +1,82 @@
+.container{
+    height: 100vh;
+    text-align: center;
+    /* background-color: black; */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.txt{
+    width: 100%;
+    color: white;
+    position: absolute;
+    font-size: 22px;
+    top: 40%;
+    font-family: 'Cinzel', serif;
+}
+.txt p{
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    animation: color-change 3s infinite;
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+.bg-img{
+    background-size: cover;
+    height: 100vh;
+    width: 60%;
+    float: right;
+
+}
+
+
+@media only screen and (max-width: 725px){
+    .txt{
+        position: absolute;
+        font-weight: bolder;
+        top: 35%;
+        /* display: grid; */
+        /* text-align: center; */
+        /* right: 39%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* margin: auto; */
+        left: 0%;
+        font-size: 19px;
+        width: 100%;
+    }
+    .bg-img{
+        height: 77vh;
+        width: 100%;
+        z-index: -1;
+    }
+    .red-bar{
+        position: absolute;
+    left: 46%;
+    margin-top: 55px;
+    width: 5px;
+    }
+    .red-bar span{
+        width: 5px;
+    }
+    .red-bar h6{
+        left: 23px;
+    }
+}

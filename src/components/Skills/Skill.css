@@ -1,0 +1,81 @@
+.skill_list{
+    padding-top: 78px;
+}
+.skills{
+    position: relative;
+    background: #c35656;
+    height: 100vh;
+    width: 100%;
+}
+.skills h2{
+    text-align: center;
+    position: relative;
+    padding-top: 90px;
+    margin-bottom: 26px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.skill_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: inherit;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+}
+.skill_list ul h6{
+    padding: 25px 4px;
+    width: 7cm;
+    margin: 12px 8px;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 18px;
+    border-radius: 9px;
+}
+.skills h5{
+    text-align: center;
+}
+/* .skills h5::before{
+    position: absolute;
+    content: '';
+    background: red;
+    width: 6em;
+    height: 4px;
+    display: block;
+    margin-left: 40.7%;
+    margin-top: 6px;
+}
+.skills h5::after{
+    position: absolute;
+    content: '';
+    background: red;
+    width: 6em;
+    height: 4px;
+    display: block;
+    margin-left: 53.5%;
+    margin-top: -11px;
+} */
+
+@media only screen and (max-width: 800px)
+{
+    .skill_list ul h6{
+        width: 151px;
+        font-size: 13px;
+    }
+   
+}
+@media only screen and (max-width: 670px)
+{
+    .skill_list ul{
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto;
+    }
+    /* .skills h5::after{
+        margin-left: 58.5%;
+
+    }
+    .skills h5::before{
+        margin-left: 25.7%;
+    } */
+}
